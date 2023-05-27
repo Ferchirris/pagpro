@@ -1,0 +1,230 @@
+p{
+    border:#FFAFE4 5px dotted;
+}
+.titulo{
+    text-decoration:dotted;
+    font-family: monospace;
+    color:#500353;
+    text-align: center;
+    text-size-adjust: ;
+    background-color: rgb(192, 88, 140);
+}
+.name{
+    display:inline-block;
+    margin:left;
+    font-family:cursive;
+    color:rgb(235, 157, 143);
+    text-align:left;
+}
+.foto{
+    margin:auto;
+    background-color:#D696D8 ;
+    width:20rem;
+    height:20rem;
+}
+p{
+    text-align: center;
+    font-size: xx-large;
+    margin:auto;
+    background-color: bisque !important;
+}
+.claseTexto{
+    background-color: darkmagenta;
+}
+#texto{
+    background-color: aqua;
+}
+ul{
+    list-style-type: circle;
+    font-size:x-large;
+}
+.tabla{
+    border-collapse: collapse; margin: 25px 0; font-size:1rem; font-family: sans-serif; 
+    min-width: 450px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.pelis{
+    display:inline-block;
+    list-style-type:upper-latin;
+    font-size:large;
+    margin:left;
+    background-color:rgb(154, 136, 219) ;
+    width:20rem;
+    height:12rem;
+}
+.music{
+    display:inline-block;
+    margin:right;
+    list-style-type:upper-latin;
+    font-size:large;
+    background-color:plum ;
+    width:20rem;
+    height:15rem;
+}
+scroll-container {
+    margin:auto;
+    display:block;
+    width: 350px;
+    height: 200px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+  scroll-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size:2rem;
+    font-family: sans-serif;
+  }
+  *{
+    margin:0;
+    box-sizing: border-box;
+  }
+  :root{
+    --border:4px solid;
+  }
+  .bubble{
+        width: max-content;
+        margin:200px auto;
+        position: relative;
+  }
+  .face{
+    position: relative;
+    width: 320px;
+    height: 270px;
+    border: var(--border);
+    background-color: #FFDCC8;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .face::before{
+    content:"";
+    position:absolute;
+    z-index:10;
+    width: 70%;
+    aspect-ratio: 1/1;
+    background-color: #FFD13F;
+    border-radius: 50%;
+    border:var(--border);
+    top:-56%;
+    left:-65px;
+    
+
+  }
+  .face::after{
+    content:"";
+    position:absolute;
+    width: 70%;
+    aspect-ratio: 1/1;
+    background-color: #FFD13F;
+    border-radius: 50%;
+    border:var(--border);
+    top:-56%;
+    right:-65px;
+
+
+  }
+
+  .eye{
+    position: absolute;
+    width: 50%;
+    aspect-ratio:1/1;
+    border: var(--border);
+    background-color: #FFF;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .eye-1{
+    top:20px;
+    left:-30px;
+  }
+  .eye-r{
+    top:30px;
+    right:-20px;
+
+  }
+  .pupil-1{
+    position: absolute;
+    right:-10px;
+    top:0;
+    bottom:0;
+    margin:auto 0;
+    width: 60%;
+    height: 74%;
+    background-color: #000;
+    border-radius: 50%;
+
+
+    box-shadow: 0 0 0 10px #84B5EB;
+  }
+  .pupil-1::after{
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    margin:auto 0;
+    right:20px;
+
+    width: 40%;
+    aspect-ratio:1/1;
+    background-color:#FFF;
+    border-radius:50%;
+  }
+  .pupil-r{
+    position:absolute;
+    left:20%;
+    top:0;
+    bottom:0;
+    margin: auto 0;
+
+    width:70%;
+    aspect-ratio: 1/1;
+    background-color: #000;
+    border-radius: 50%;
+    box-shadow:0 0 0 10px #84B5EB; 
+  }
+  .pupil-r::after{
+    content:"";
+    position:absolute;
+    /*top:0;
+    left:0;
+    right: 0;
+    bottom:0;*/
+    inset:0;
+    margin:auto;
+    width:40%;
+    aspect-ratio: 1/1;
+    background-color:#FFF;
+    border-radius: 50%;
+    right:-10px;
+  }
+  .smile{
+    position:absolute;
+    left:0;
+    right: 0;
+
+    bottom:80px;
+    margin:0 auto;
+    width: 40px;
+    height: 40px;
+    border: var(--border);
+    border-radius: 50%;
+    border-top:transparent;
+    border-right: transparent;
+    border-left:transparent;
+  }
+  .hair{
+    z-index:-1;
+    position:absolute;
+    top:-40px;
+    width: 130px;
+    height: 130px;
+    background-color: #FFD13F;
+    border:var(--border);
+    border-radius:50%;
+
+  }
+  .hair-r{
+    right:0;
+
+  }
